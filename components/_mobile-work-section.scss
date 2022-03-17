@@ -1,0 +1,25 @@
+section.work-section {
+  background-color: $bg-color-start-section;
+  align-items: center;
+  height: 100%;
+  a.start-nav-button-2 {
+    border-radius: 0.8rem 0 0 0.8rem;
+  }
+  a.about-nav-button {
+    border-radius: 0 0.8rem 0.8rem 0;
+    left: 74px;
+  }
+  h2 {
+    margin-top: 10px;
+  }
+  div.work-box {
+    width: 170px;
+    max-width: 220px;
+    height: 170px;
+    max-height: 220px;
+    border-radius: 1.5rem;
+    margin-top: 30px;
+    border: solid 1px white;
+    box-shadow: 0px 4px 8px 2px #222341;
+  }
+}
