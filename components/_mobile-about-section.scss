@@ -1,0 +1,12 @@
+main {
+  section.about-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: $bg-color-about-section;
+    padding-top: 20px;
+  }
+}

@@ -1,20 +1,25 @@
 main {
   section.start-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
     width: 100%;
-    min-width: 320px;
     height: 100vh;
     background-color: $bg-color-start-section;
     div.logo-button-container {
       display: flex;
       justify-content: space-between;
       align-items: center;
+      position: absolute;
+      top: 0;
       width: 100%;
-      height: 60px;
-      padding: 10px 10px 0 10px;
+      max-width: 800px;
+      padding: 15px 10px 0 10px;
       div.logo {
         width: 48px;
         height: 48px;
-        background-image: url("../icons/logo.svg");
+        background-image: url("/icons/logo.svg");
         background-position: center;
         background-repeat: no-repeat;
         background-size: contain;
@@ -30,30 +35,35 @@ main {
     }
     hr {
       background-color: white;
-      width: 68%;
+      width: 80%;
+      max-width: 700px;
       height: 2px;
-      margin-top: 100px;
       margin-bottom: 20px;
     }
     div.text-and-arrow-container {
       display: flex;
+      justify-content: center;
+      position: relative;
+      margin: 0 auto;
+      width: 100%;
+      max-width: 850px;
       div.big-arrow {
-        width: 45px;
+        width: 60px;
         height: 200px;
-        background-image: url("../icons/arrow.svg");
+        background-image: url("/icons/arrow.svg");
         background-position: center;
         background-repeat: no-repeat;
         background-size: contain;
+        position: absolute;
+        left: 0;
       }
       div.text {
         font-size: 2.5rem;
         line-height: 3rem;
-        padding-top: 35px;
-        margin-left: 20px;
         div.keyboard {
           width: 85px;
           height: 85px;
-          background-image: url("../icons/keyboard.svg");
+          background-image: url("/icons/keyboard.svg");
           background-position: center;
           background-repeat: no-repeat;
           background-size: contain;
@@ -61,18 +71,21 @@ main {
         }
       }
     }
-    div.bottom-of-section {
+    a.bottom-of-section {
       display: flex;
       flex-direction: column;
       justify-content: flex-end;
       align-items: center;
+      position: absolute;
+      bottom: 0;
       width: 100%;
-      height: 200px;
       font-size: 1.5rem;
+      text-decoration: none;
+      color: white;
       div.arrow-down-mini {
         width: 75px;
         height: 75px;
-        background-image: url("../icons/arrow-down-mini.svg");
+        background-image: url("/icons/arrow-down-mini.svg");
         background-position: center;
         background-repeat: no-repeat;
         background-size: contain;
