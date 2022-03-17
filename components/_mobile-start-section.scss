@@ -50,7 +50,7 @@ main {
       div.big-arrow {
         width: 60px;
         height: 200px;
-        background-image: url("/icons/arrow.svg");
+        background-image: url("icons/arrow.svg");
         background-position: center;
         background-repeat: no-repeat;
         background-size: contain;
@@ -63,7 +63,7 @@ main {
         div.keyboard {
           width: 85px;
           height: 85px;
-          background-image: url("/icons/keyboard.svg");
+          background-image: url("../icons/keyboard.svg");
           background-position: center;
           background-repeat: no-repeat;
           background-size: contain;
@@ -85,7 +85,7 @@ main {
       div.arrow-down-mini {
         width: 75px;
         height: 75px;
-        background-image: url("/icons/arrow-down-mini.svg");
+        background-image: url("./icons/arrow-down-mini.svg");
         background-position: center;
         background-repeat: no-repeat;
         background-size: contain;
