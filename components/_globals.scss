@@ -10,6 +10,41 @@ html {
   color: white;
   text-align: center;
   scroll-behavior: smooth;
+  scroll-snap-type: y proximity;
+}
+
+a.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  width: 7.5rem;
+  height: 2.5rem;
+  border-radius: 0.8rem;
+  color: white;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+a.bottom-of-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: white;
+  div.arrow-down-mini {
+    width: 75px;
+    height: 75px;
+    background-image: url("./icons/arrow-down-mini.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
 }
 
 // Variables

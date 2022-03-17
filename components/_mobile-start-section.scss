@@ -24,13 +24,8 @@ main {
         background-repeat: no-repeat;
         background-size: contain;
       }
-      button.find-me {
-        width: 7.5rem;
-        height: 2.5rem;
-        border-radius: 0.8rem;
+      a.find-me {
         border: solid 2px $button-border-color;
-        background-color: $bg-color-start-section;
-        color: white;
       }
     }
     hr {
@@ -47,6 +42,7 @@ main {
       margin: 0 auto;
       width: 100%;
       max-width: 850px;
+      scroll-snap-align: start;
       div.big-arrow {
         width: 60px;
         height: 200px;
@@ -69,26 +65,6 @@ main {
           background-size: contain;
           margin: 0 auto;
         }
-      }
-    }
-    a.bottom-of-section {
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-end;
-      align-items: center;
-      position: absolute;
-      bottom: 0;
-      width: 100%;
-      font-size: 1.5rem;
-      text-decoration: none;
-      color: white;
-      div.arrow-down-mini {
-        width: 75px;
-        height: 75px;
-        background-image: url("./icons/arrow-down-mini.svg");
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: contain;
       }
     }
   }
