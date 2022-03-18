@@ -9,8 +9,12 @@ section.work-section {
     border-radius: 0 0.8rem 0.8rem 0;
     left: 74px;
   }
+  h1 {
+    margin-top: 70px;
+  }
   h2 {
     margin-top: 10px;
+    margin-bottom: 50px;
   }
   div.work-box {
     width: 170px;
@@ -18,8 +22,23 @@ section.work-section {
     height: 170px;
     max-height: 220px;
     border-radius: 1.5rem;
-    margin-top: 30px;
-    border: solid 1px white;
-    box-shadow: 0px 4px 8px 2px #222341;
+    margin-top: 50px;
+    box-shadow: 0px 5px 8px 3px #c3c3ee38;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  div.box-1 {
+    background-image: url("imgs/Batatabit-SS.png");
+  }
+  div.box-2 {
+    background-image: url("imgs/Cultural-Fitness-SS.png");
+  }
+  div.box-3 {
+    background-image: url("imgs/Oceano-Rosa-SS.png");
+  }
+  div.box-4 {
+    background-image: url("imgs/SVQ-SS.png");
+    margin-bottom: 50px;
   }
 }

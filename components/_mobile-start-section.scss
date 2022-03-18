@@ -34,8 +34,8 @@ main {
     }
     hr {
       background-color: white;
-      width: 80%;
-      max-width: 700px;
+      width: 85%;
+      max-width: 850px;
       height: 2px;
       margin-bottom: 20px;
     }
@@ -63,7 +63,7 @@ main {
         div.keyboard {
           width: 85px;
           height: 85px;
-          background-image: url("/icons/keyboard.svg");
+          background-image: url("icons/keyboard.svg");
           background-position: center;
           background-repeat: no-repeat;
           background-size: contain;
