@@ -1,7 +1,8 @@
 section.work-section {
   background-color: $bg-color-start-section;
   align-items: center;
-  height: 100%;
+  height: auto;
+  min-height: 1300px;
   a.start-nav-button-2 {
     border-radius: 0.8rem 0 0 0.8rem;
   }
