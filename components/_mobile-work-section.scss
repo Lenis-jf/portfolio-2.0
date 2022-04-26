@@ -2,32 +2,34 @@ section.work-section {
   background-color: $bg-color-start-section;
   align-items: center;
   height: auto;
-  min-height: 1300px;
-  a.start-nav-button-2 {
-    border-radius: 0.8rem 0 0 0.8rem;
-  }
-  a.about-nav-button {
-    border-radius: 0 0.8rem 0.8rem 0;
-    left: 74px;
+  div.navegation-buttons__container {
+    a.start-nav-button {
+      border-radius: 0.8rem 0 0 0.8rem; 
+    }
+    a.about-nav-button {
+      border-radius: 0 0.8rem 0.8rem 0;
+    }
   }
   h1 {
     margin-top: 70px;
   }
   h2 {
     margin-top: 10px;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
   }
-  div.work-box {
-    width: 170px;
-    max-width: 220px;
-    height: 170px;
-    max-height: 220px;
-    border-radius: 1.5rem;
-    margin-top: 50px;
-    box-shadow: 0px 5px 8px 3px #c3c3ee38;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+  div.box-container {
+    div.work-box {
+      width: 200px;
+      max-width: 250px;
+      height: 200px;
+      max-height: 250px;
+      border-radius: 1.5rem;
+      margin-top: 50px;
+      box-shadow: 0px 5px 8px 3px #c3c3ee38;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
   }
   div.box-1 {
     background-image: url("imgs/Batatabit-SS.png");
@@ -41,5 +43,11 @@ section.work-section {
   div.box-4 {
     background-image: url("imgs/SVQ-SS.png");
     margin-bottom: 50px;
+  }
+  p {
+    width: 230px;
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 35px 0 120px 0;
   }
 }

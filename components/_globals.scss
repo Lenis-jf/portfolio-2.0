@@ -12,23 +12,30 @@ html {
   scroll-behavior: smooth;
 }
 
-a.button {
+div.navegation-buttons__container {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 1.2rem;
-  width: 7.5rem;
-  height: 2.5rem;
-  border-radius: 0.8rem;
-  color: white;
-  text-decoration: none;
-  background-color: transparent;
-  border: solid 2px white;
+  width: auto;
+  height: auto;
   position: absolute;
   top: 0;
   left: 0;
-  margin: 25px 0 0 20px;
+  margin: 30px;
+  a.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    width: 7.5rem;
+    height: 2.5rem;
+    border-radius: 0.8rem;
+    color: white;
+    text-decoration: none;
+    background-color: transparent;
+    border: solid 2px white;
+    margin-right: -3px;
+  }
 }
+
 
 a.bottom-of-section {
   display: flex;
