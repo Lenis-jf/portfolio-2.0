@@ -79,3 +79,43 @@ $bg-color-start-section: #0B1020;
 $font-size-button: 1.2rem;
 $button-border-color: #69A2FF;
 $bg-color-about-section: #602EEC;
+
+// Media Querys
+
+@media only screen and (min-width: 801px) {
+  div.navegation-buttons__container {
+    margin: 50px;
+    a.button {
+      font-size: 1.5rem;
+      width: 8.3rem;
+      height: 3rem;
+      border-radius: 1rem;
+      transition: all 300ms ease-in;
+    }
+    a.button:hover {
+      background-color: white;
+      color: #0B1020;
+    }
+  }
+  
+  a.bottom-of-section {
+    font-size: 2rem;
+    div.arrow-down-mini {
+      width: 100px;
+      height: 100px;
+    }
+  }
+
+  section.section {
+    padding: 0;
+    h1 {
+      font-size: 2rem;
+    }
+    h2 {
+      font-size: 1.8rem;
+    }
+    p, div {
+      font-size: 1.5rem;
+    }
+  }
+}

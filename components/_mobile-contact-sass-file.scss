@@ -59,4 +59,26 @@ section.contact-section--file {
     color: white;
     cursor: pointer;
   }
+  @media only screen and (min-width: 801px) {
+    a.home-button--contact-file {
+      transition: all 300ms ease-in;
+    }
+    a.home-button--contact-file:hover {
+      background-color: white;
+      color: $bg-color-start-section;
+    }
+    div.icons__container--contact {
+      transition: all 250ms ease-in-out;
+      a.icon {
+        transition: all 300ms ease-in;
+      }
+      a.icon:hover {
+        opacity: 0.6;
+        transform: scale(1.3);
+      }
+    }
+    div.icons__container--contact:hover {
+      max-width: 350px;
+    }
+  }
 }

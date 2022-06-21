@@ -1,53 +1,60 @@
-section.work-section {
-  background-color: $bg-color-start-section;
-  align-items: center;
-  height: auto;
-  div.navegation-buttons__container {
-    a.start-nav-button {
-      border-radius: 0.8rem 0 0 0.8rem; 
+main {
+  section.work-section {
+    background-color: $bg-color-start-section;
+    align-items: center;
+    height: auto;
+    div.navegation-buttons__container {
+      a.start-nav-button {
+        border-radius: 0.8rem 0 0 0.8rem; 
+      }
+      a.about-nav-button {
+        border-radius: 0 0.8rem 0.8rem 0;
+      }
     }
-    a.about-nav-button {
-      border-radius: 0 0.8rem 0.8rem 0;
+    div.work-section-components-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 100px;
+      margin-bottom: 50px;
+      h2 {
+        margin-top: 10px;
+        margin-bottom: 30px;
+      }
+      div.box-container {
+        div.work-box {
+          width: 200px;
+          max-width: 250px;
+          height: 200px;
+          max-height: 250px;
+          border-radius: 1.5rem;
+          margin-top: 50px;
+          box-shadow: 0px 5px 8px 3px #c3c3ee38;
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
+      }
+      div.box-1 {
+        background-image: url("imgs/Batatabit-SS.png");
+      }
+      div.box-2 {
+        background-image: url("imgs/Cultural-Fitness-SS.png");
+      }
+      div.box-3 {
+        background-image: url("imgs/Oceano-Rosa-SS.png");
+      }
+      div.box-4 {
+        background-image: url("imgs/SVQ-SS.png");
+        margin-bottom: 50px;
+      }
+      p {
+        width: 230px;
+        text-align: center;
+        font-size: 1.5rem;
+        margin-top: 35px;
+        margin-bottom: 150px;
+      }
     }
-  }
-  h1 {
-    margin-top: 70px;
-  }
-  h2 {
-    margin-top: 10px;
-    margin-bottom: 30px;
-  }
-  div.box-container {
-    div.work-box {
-      width: 200px;
-      max-width: 250px;
-      height: 200px;
-      max-height: 250px;
-      border-radius: 1.5rem;
-      margin-top: 50px;
-      box-shadow: 0px 5px 8px 3px #c3c3ee38;
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
-    }
-  }
-  div.box-1 {
-    background-image: url("imgs/Batatabit-SS.png");
-  }
-  div.box-2 {
-    background-image: url("imgs/Cultural-Fitness-SS.png");
-  }
-  div.box-3 {
-    background-image: url("imgs/Oceano-Rosa-SS.png");
-  }
-  div.box-4 {
-    background-image: url("imgs/SVQ-SS.png");
-    margin-bottom: 50px;
-  }
-  p {
-    width: 230px;
-    text-align: center;
-    font-size: 1.5rem;
-    margin: 35px 0 120px 0;
   }
 }
