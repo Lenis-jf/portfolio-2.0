@@ -12,9 +12,15 @@ section.contact-section--file {
     margin: 20px auto 20px auto;
     max-width: 200px;
   }
-  p {
-    margin: 30px auto 40px auto;
-    max-width: 200px;
+  div.contact-card {
+    background-image: url("icons/contact-card.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 80px;
+    height: 80px;
+    z-index: 1;
+    margin: 20px auto 30px auto;
   }
   div.icons__container--contact {
     display: flex;
@@ -79,6 +85,10 @@ section.contact-section--file {
     }
     div.icons__container--contact:hover {
       max-width: 350px;
+    }
+    div.contact-card {
+      width: 100px;
+      height: 100px;
     }
   }
 }
