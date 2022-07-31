@@ -28,7 +28,7 @@ body::-webkit-scrollbar-track {
 }
 
 body::-webkit-scrollbar-thumb {
-  background: linear-gradient(to bottom right, $bg-color-start-section, $bg-color-about-section);
+  background: linear-gradient(to bottom right, $bg-color-about-section,  $bg-color-start-section);
   border-radius: 20px;
   border: 2px solid $bg-color-start-section;
 }

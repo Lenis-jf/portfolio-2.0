@@ -7,14 +7,18 @@ main {
         align-items: center;
         flex-wrap: wrap;
         max-width: 800px;
-        div.work-box {
-          width: 350px;
-          height: 300px;
-          border-radius: 2rem;
-          margin-top: 70px;
-        }
-        div.box-4 {
-          margin: 70px auto 30px auto;
+        justify-content: center;
+        align-items: center;
+        div.box-wrap {
+          div.work-box {
+            width: 350px;
+            height: 300px;
+            border-radius: 2rem;
+            margin: 70px 50px 70px 0px;
+          }
+          div.work-box--1, div.work-box--2 {
+            margin-bottom: 0px;
+          }
         }
       }
     }
