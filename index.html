@@ -4,172 +4,121 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Juan Fernando Lenis</title>
+  <title>juanfelenis</title>
   <link rel="shortcut icon" href="icons/logo.svg" type="image/x-icon">
-  <link rel="stylesheet" href="./main-mobile-components.css">
-  <link rel="stylesheet" href="./main-desktop-components.css" media="screen and (min-width: 801px)">
+  <link rel="stylesheet" href="./mobile-styles.css">
+  <!-- <link rel="stylesheet" href="./main-desktop-components.css" media="screen and (min-width: 801px)"> -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Oxygen+Mono&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Sans:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
 </head>
 <body>
   <main>
-    <section id="start" class="start-section section">
-      <div class="logo-button-container">
-        <div class="logo"></div>
-        <a href="contact.html" class="find-me">Find Me</a>
+    <header>
+      <label class="menu brown-color light-theme">
+        <input type="checkbox"/>
+      </label>
+      <div class="menu-buttons-container">
+        <a href="#home" class="menu-button brown-color light-theme">
+          <span>Home</span>
+        </a>
+        <a href="#projects" class="menu-button brown-color light-theme">
+          <span>Projects</span>
+        </a>
+        <a href="#contact" class="menu-button brown-color light-theme">
+          <span>Contact</span>
+        </a>
+        <a href="#about" class="menu-button brown-color light-theme">
+          <span>About</span>
+        </a>
+        <label class="darkmode-button-container brown-color light-theme">
+          <input type="checkbox"/>
+        </label>
       </div>
-      <hr>
-      <div class="text-and-arrow-container">
-        <div class="big-arrow"></div>
-        <div class="text">
-          App Developer
-          <br>
-          Web Designer
-          <br>
-          UX / UI
-          <div class="keyboard"></div>
-        </div>
+      <div class="logo-container"></div>
+    </header>
+    <section id="home" class="section light-section">
+      <div class="main-logo"></div>
+      <div class="hr"></div>
+      <h1>Software Engineer<br>Web Developer<br>UI & UX Designer</h1>
+      <div class="buttons-container">
+        <a class="button">Find Me</a>
+        <a class="button">Know Me</a>
       </div>
-      <a href="#about" class="bottom-of-section">
-        <span>See More</span>
-        <div class="arrow-down-mini"></div>
+      <a href="#projects" class="section-changer section-changer-dark">
+        <span>See more</span>
+        <div></div>
       </a>
     </section>
-    <section id="about" class="about-section section">
-      <div class="navegation-buttons__container">
-        <a href="#start" class="start-nav-button button">start</a>
-      </div>
-      <div class="screen"></div>
-      <div class="mouse"></div>
-      <div class="about-me--text">
-        <h1>Who am i?</h1>
-        <p>
-          Hi, Im Juan Fernando
-        </p>
-        <p>
-          &
-        </p> 
-        <p class="im-colombian">
-          im Colombian
-        </p>
-        <p>
-          I would describe myself as
-        </p>
-        <p>
-          creative
-        </p>
-        <p>
-          postive
-        </p>
-        <p>
-          productive
-        </p>
-        <p>
-          decisive
-        </p>
-      </div>
-      <div class="mouse-pointer"></div>
-      <a href="#work" class="bottom-of-section">
-        <span>Go Ahead</span>
-        <div class="arrow-down-mini"></div>
-      </a>
-    </section>
-    <section id="work" class="work-section section">
-      <div class="navegation-buttons__container">
-        <a href="#start" class="start-nav-button button">start</a>
-        <a href="#about" class="about-nav-button button">About</a>
-      </div>
-      <div class="work-section-components-container">
-        <h1>What do i do?</h1>
-        <h2>Have a look!</h2>
-        <div class="box-container">
-          <div class="box-wrap">
-            <div class="work-box work-box--1">
-              <div class="box-1--adelante adelante"></div>
-              <div class="box-1--atras atras">Atras</div>
-            </div>
-          </div>
-          <div class="box-wrap">
-            <div class="work-box work-box--2">
-              <div class="box-2--adelante adelante"></div>
-              <div class="box-2--atras atras">Atras</div>
-            </div>
-          </div>
-          <div class="box-wrap">
-            <div class="work-box work-box--3">
-              <div class="box-3--adelante adelante"></div>
-              <div class="box-3--atras atras">Atras</div>
-            </div>
-          </div>
-          <div class="box-wrap">
-            <div class="work-box work-box--4">
-              <div class="box-4--adelante adelante"></div>
-              <div class="box-4--atras atras">Atras</div>
-            </div>
-          </div>
+    <section id="projects" class="section dark-section">
+      <p>Here are some of the projects i have worked on</p>
+      <p>Just touch or put your mouse on the cards to turn them and go see the GitHub repository of the project</p>
+      <div class="project-card drones" tabindex="0">
+        <div class="face front">
+          <img src="/imgs/drones-project.png" alt="">
         </div>
-        <p>
-          I mostly design and program websites of all types but I like a little of everything!
-        </p>
-      </div>
-      <a href="#abilities" class="bottom-of-section">
-        <span>Continue Scrolling</span>
-        <div class="arrow-down-mini"></div>
-      </a>
-    </section>
-    <section id="abilities" class="abilities-section section">
-      <div class="navegation-buttons__container">
-        <a href="#start" class="start-nav-button button">start</a>
-        <a href="#about" class="about-nav-button button">About</a>
-        <a href="#work" class="projects-nav-button button">Projects</a>
-      </div>
-      <h1>Development Abilities</h1>
-      <div class="code-symbol"></div>
-      <div class="text-and-symbols__container">
-        <p>
-          I am Frontend developer and i usually work with tools like JavaScript, CSS, SASS and Html
-        </p>
-        <div class="symbols__container frontend">
-          <div class="javascript symbol"></div>
-          <div class="css symbol"></div>
-          <div class="sass symbol"></div>
-          <div class="html symbol"></div>
-        </div>
-        <p>I have also worked with other tools like Python, Java and Pug</p>
-        <div class="symbols__container other-tools">
-          <div class="python symbol"></div>
-          <div class="java symbol"></div>
-          <div class="pug symbol"></div>
-        </div>
-        <h2>Design Abilities</h2>
-        <div class="design-symbol"></div>
-        <p>
-          I dedicate myself to programming as much as designing. I use tools like Figma or Adobe Xd where I do not only design the UI, but also the UX.
-        </p>
-        <div class="symbols__container design--symbols">
-          <div class="figma symbol"></div>
-          <div class="adobe-xd symbol"></div>
+        <div class="face back">
+          <img src="/icons/github-logo.svg" alt="">
+          <a href="#" class="button card-button">Show Repository</a>
+          <a href="#" class="button card-button">See more about it</a>
         </div>
       </div>
-      <a href="#contact" class="bottom-of-section">
-        <span>Do Not Hesitate</span>
-        <div class="arrow-down-mini"></div>
-      </a>
-    </section>
-    <section id="contact" class="contact-section section">
-      <p>Do not forget my name!</p>
-      <div class="logo--bigger"></div>
-      <p>I am Juan Fernando and i am here to bring your ideas to reality</p>
-      <a href="contact.html" class="find-me--bigger">Find Me</a>
-      <a href="#start" class="bottom-of-section contact-bottom">
-        <div class="arrow-down-mini arrow-up-mini"></div>
-        <span>Go back to start</span>
-      </a>
-      <div class="copy-right__container">
-        <p class="copy-right">© juanfelenis 2022</p>
+      <div class="project-card cultural" tabindex="0">
+        <div class="face front">
+          <img src="/imgs/cultural-fitness-project.png" alt="">
+        </div>
+        <div class="face back">
+          <img src="/icons/github-logo.svg" alt="">
+          <a href="#" class="button card-button">Show Repository</a>
+          <a href="#" class="button card-button">See more about it</a>
+        </div>
       </div>
+      <div class="project-card batata" tabindex="0">
+        <div class="face front">
+          <img src="/imgs/batata-bit-project.png" alt="">
+        </div>
+        <div class="face back">
+          <img src="/icons/github-logo.svg" alt="">
+          <a href="#" class="button card-button">Show Repository</a>
+          <a href="#" class="button card-button">See more about it</a>
+        </div>
+      </div>
+      <div class="project-card svq" tabindex="0">
+        <div class="face front">
+          <img src="/imgs/svq-project.png" alt="">
+        </div>
+        <div class="face back">
+          <img src="/icons/github-logo.svg" alt="">
+          <a href="#" class="button card-button">Show Repository</a>
+          <a href="#" class="button card-button">See more about it</a>
+        </div>
+      </div>
+      <div class="project-card oceano-rosa" tabindex="0">
+        <div class="face front">
+          <img src="/imgs/oceano-rosa-project.png" alt="">
+        </div>
+        <div class="face back">
+          <img src="/icons/github-logo.svg" alt="">
+          <a href="#" class="button card-button">Show Repository</a>
+          <a href="#" class="button card-button">See more about it</a>
+        </div>
+      </div>
+      <div class="project-card tyc" tabindex="0">
+        <div class="face front">
+          <img src="/imgs/tyc-project.png" alt="">
+        </div>
+        <div class="face back">
+          <img src="/icons/github-logo.svg" alt="">
+          <a href="#" class="button card-button">Show Repository</a>
+          <a href="#" class="button card-button">See more about it</a>
+        </div>
+      </div>
+      <a href="#" class="section-changer section-changer-light">
+        <span>Not finished yet :)</span>
+        <div></div>
+      </a>
     </section>
   </main>
+  <script src="./main.js"></script>
 </body>
 </html>
