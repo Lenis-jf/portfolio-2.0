@@ -4,6 +4,8 @@ const labelMenu = document.querySelector('label.menu');
 const menuButtonsContainer = document.querySelector('div.menu-buttons-container');
 const themeSwitcher = document.querySelector('div.menu-buttons-container label.darkmode-button-container');
 
+const cards = document.querySelectorAll('.project-card');
+
 console.log("Secciones detectadas:", sections);
 
 // const lightColor = 'rgb(248, 243, 217)';
@@ -50,4 +52,20 @@ const observer = new IntersectionObserver(entries => {
 
 sections.forEach(section => {
   observer.observe(section);
+});
+
+cards.forEach(card => {   
+    card.addEventListener('click', (event) => {
+        event.stopPropagation();
+        card.classList.toggle('flipped');
+        console.log("Card clickeada:", card);
+    });
+});
+
+document.addEventListener('click', (event) => {
+  cards.forEach(card => {
+    if (card.classList.contains('flipped')) {
+      card.classList.remove('flipped');
+    }
+  });
 });
