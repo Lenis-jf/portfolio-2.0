@@ -3,6 +3,8 @@ const logo = document.querySelector('.logo-container');
 const labelMenu = document.querySelector('label.menu');
 const menuButtonsContainer = document.querySelector('div.menu-buttons-container');
 const themeSwitcher = document.querySelector('div.menu-buttons-container label.darkmode-button-container');
+const dronesimImages = document.querySelectorAll('div.images-wrapper div.img');
+const radioButtons = document.querySelectorAll('a.radio-button');
 
 const cards = document.querySelectorAll('.project-card');
 
@@ -19,7 +21,7 @@ const observerOptions = {
     threshold: 0.3
 };
 
-const observer = new IntersectionObserver(entries => {
+const sectionObserver = new IntersectionObserver(entries => {
   entries.forEach(entry => {
     if(entry.isIntersecting) {
         const id = entry.target.id;
@@ -52,19 +54,21 @@ const observer = new IntersectionObserver(entries => {
 }, observerOptions);
 
 sections.forEach(section => {
-  observer.observe(section);
+  sectionObserver.observe(section);
 });
 
 const lastSection = localStorage.getItem('lastSection');
 
 if(lastSection && document.getElementById(lastSection)) {
     document.getElementById(lastSection).scrollIntoView();
-} else {
+} else if(document.includes('home')) {
     document.getElementById('home').scrollIntoView();
 }
 
 cards.forEach(card => {   
     card.addEventListener('click', (event) => {
+        if(event.target.tagName.toLowerCase() === 'a') return;
+
         event.stopPropagation();
         card.classList.toggle('flipped');
         console.log("Card clickeada:", card);
@@ -77,4 +81,21 @@ document.addEventListener('click', (event) => {
       card.classList.remove('flipped');
     }
   });
+});
+
+const radioButtonsObserver = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) { // Corregido: "isIntersecting"
+      const id = entry.target.id;
+      console.log("Imagen visible:", id);
+
+      radioButtons.forEach(radioButton => {
+        radioButton.classList.toggle('active', radioButton.href.includes(id));
+      });
+    }
+  });
+}, { threshold: 0.8 });
+
+dronesimImages.forEach(image => {
+    radioButtonsObserver.observe(image);
 });
