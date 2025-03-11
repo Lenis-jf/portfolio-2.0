@@ -15,6 +15,11 @@ body {
   overflow-x: hidden;
 }
 
+body a {
+    -webkit-tap-highlight-color: transparent; /* Para quitar el sombreado en celulares */
+    text-decoration: none;
+}
+
 :root {
   --light-color: #F8F3D9;
   --light2-color: #3F4F44;
@@ -113,7 +118,6 @@ div.menu-buttons-container a.menu-button {
     display: flex;
     justify-content: center;
     align-items: center;
-    text-decoration: none;
     border-radius: 5px;
     font-size: 10px;
     width: 40px;
@@ -249,29 +253,43 @@ div.logo-container.hidden {
 /*MAIN-TEXT_HOME-------------------------------------------------------------------------------*/ 
 
 section {
-    height: 100vh;
-}
-
-section#home {
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: auto;
+    min-height: 100vh;
+    text-align: center;
+    padding: 40px 20px 80px 20px;
+}
+
+section#home {
     justify-content: center;
-    position: relative;
     background-color: var(--light-color);
     height: 100vh;
     color: var(--foreground-brown-color);
-    padding-bottom: 80px;
+}
+
+div.main-logo{
+    position: relative;
+    display: inline-block;
+    width: 185px;
+    height: 185px;
+    background-image: url("icons/logo-small.svg");
+    background-size: cover;
+    background-position: center;   
 }
 
 div.hr {
-    width: 80%;
+    position: absolute;
+    top: 160px;
+    width: 150%;
+    margin-left: calc(50% - 75%);
     height: 2.5px;
     background-color: var(--foreground-brown-color);
 }
 
 div.hr::before {
-    position: relative;
+    position: absolute;
     top: -70px;
     left: -10px;
     display: inline-block;
@@ -279,15 +297,6 @@ div.hr::before {
     width: 15px;
     height: 350px;
     background-image: url("icons/arrow-deco.svg");
-    background-size: cover;
-    background-position: center;    
-}
-
-div.main-logo{
-    display: inline-block;
-    width: 185px;
-    height: 185px;
-    background-image: url("icons/logo-small.svg");
     background-size: cover;
     background-position: center;    
 }
@@ -311,7 +320,7 @@ a.button {
     color: var(--foreground-brown-color);
     justify-content: center;
     align-items: center;
-    background-color: var(--light-color);
+    background-color: transparent;
     border: solid 1.5px var(--foreground-brown-color);
     border-radius: 5px;
     cursor: pointer;
@@ -325,7 +334,6 @@ a.section-changer {
    text-align: center;
    align-items: center;
    gap: 5px;
-   text-decoration: none;
    color: var(--foreground-brown-color);
    cursor: pointer;
 }
@@ -357,12 +365,9 @@ a.section-changer-dark div{
     }
 }
 
-/* projects section ----------------------------------------------------------------------------*/
+/* projects section ---------------------------------------------------------------------------*/
 
 section#projects {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     height: auto;
     background-color: var(--light2-color);
     color: var(--light-color);
@@ -432,7 +437,6 @@ div.project-card .back img {
 div.project-card .back .card-button {
     width: 140px;
     height: 35px;
-    text-decoration: none;
 }
 
 div.project-card .back .card-button:first-of-type {
@@ -449,4 +453,95 @@ div.project-card.flipped .front{
 
 div.project-card.flipped .back{
     transform: perspective(800px) rotateY(360deg);
+}
+
+/* abilities section -------------------------------------------------------------------------*/
+
+section#abilities {
+    background-color: var(--light-color);
+    color: var(--foreground-brown-color);
+    text-align: center;
+    padding: 40px 20px 80px 20px;
+}
+
+section#abilities p {
+    max-width: 480px;
+}
+
+section#abilities p:last-child {
+    text-align: left;
+}
+
+div.icons-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin: 30px 0px;
+}
+
+div.icon {
+    width: 32px;
+    height: 32px;
+    background-size: cover;
+}
+
+div.js {
+    background-image: url("icons/js-icon.svg");
+}
+
+div.r {
+    background-image: url("icons/r-icon.svg");
+}
+
+div.c {
+    background-image: url("icons/c-icon.svg");
+}
+
+div.python {
+    background-image: url("icons/python-icon.svg");
+}
+
+div.cpp {
+    background-image: url("icons/cpp-icon.svg");
+}
+
+div.java {
+    background-image: url("icons/java-icon.svg");
+}
+
+div.scss {
+    background-image: url("icons/scss-icon.svg");
+}
+
+div.css {
+    background-image: url("icons/css-icon.svg");
+}
+
+div.html {
+    background-image: url("icons/html-icon.svg");
+}
+
+div.figma {
+    background-image: url("icons/figma-icon.svg");
+}
+
+/* last-part section --------------------------------------------------------------------------*/
+
+section#last-part {
+    justify-content: center;
+    background-color: var(--light2-color);
+    color: var(--light-color);
+    text-align: center;
+    padding: 40px 20px 80px 20px;
+}
+
+section#last-part a.button {
+    color: var(--light-color);
+    border: solid 1.5px var(--light-color);
+    margin-top: 30px;
+}
+
+section#last-part a.section-changer div {
+    transform: rotateX(180deg);
 }

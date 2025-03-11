@@ -23,6 +23,7 @@ const observer = new IntersectionObserver(entries => {
   entries.forEach(entry => {
     if(entry.isIntersecting) {
         const id = entry.target.id;
+        localStorage.setItem('lastSection', id);
 
         console.log("Sección visible:", id);
         console.log("Sección visible:", entry.target.classList);
@@ -53,6 +54,14 @@ const observer = new IntersectionObserver(entries => {
 sections.forEach(section => {
   observer.observe(section);
 });
+
+const lastSection = localStorage.getItem('lastSection');
+
+if(lastSection && document.getElementById(lastSection)) {
+    document.getElementById(lastSection).scrollIntoView();
+} else {
+    document.getElementById('home').scrollIntoView();
+}
 
 cards.forEach(card => {   
     card.addEventListener('click', (event) => {
