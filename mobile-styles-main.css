@@ -169,8 +169,8 @@ label.darkmode-button-container.light-color {
 label.darkmode-button-container.brown-color input {
     position: absolute;
     left: -2px;
-    top: -2;
-    appearance: none;
+    top: calc(50% - 10.5px);
+    appearance: none;   
     width: 15px;
     height: 15px;
     border-radius: 50%;
@@ -457,7 +457,6 @@ section#abilities {
     background-color: var(--light-color);
     color: var(--foreground-brown-color);
     text-align: center;
-    padding: 40px 20px 80px 20px;
 }
 
 section#abilities p {
@@ -476,7 +475,7 @@ div.icons-container {
     margin: 30px 0px;
 }
 
-div.icon {
+div.icon, a.icon {
     width: 32px;
     height: 32px;
     background-size: cover;
@@ -525,11 +524,10 @@ div.figma {
 /* last-part section --------------------------------------------------------------------------*/
 
 section#last-part {
+    position: relative;
     justify-content: center;
     background-color: var(--light2-color);
     color: var(--light-color);
-    text-align: center;
-    padding: 40px 20px 80px 20px;
 }
 
 section#last-part a.button {
@@ -540,4 +538,45 @@ section#last-part a.button {
 
 section#last-part a.section-changer div {
     transform: rotateX(180deg);
+}
+
+/* contact section -----------------------------------------------------------------------------*/
+
+section#contact {
+    position: relative;
+    justify-content: center;
+    background-color: var(--light2-color);
+    color: var(--light-color);
+}
+
+section#contact div.icons-container {
+    gap: 20px;
+}
+
+section#contact p:first-child {
+    line-height: 50px;
+}
+
+a.wa {
+    background-image: url("icons/whatsapp-icon.svg");
+}
+
+a.mail {
+    background-image: url("icons/mail-icon.svg");
+}
+
+a.instagram {
+    background-image: url("icons/instagram-icon.svg");
+}
+
+a.github {
+    background-image: url("icons/github-icon.svg");
+}
+
+span.copy-right {
+    position: absolute;
+    bottom: 50px;
+    font-size: 10px;
+    color: var(--light-color);
+    opacity: 0.6;
 }
